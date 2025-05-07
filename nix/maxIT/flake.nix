@@ -31,6 +31,7 @@
           pkgs.argocd
           pkgs.datadog-agent
           pkgs.go
+          pkgs.google-chrome
           pkgs.google-cloud-sdk
           pkgs.iterm2
           pkgs.kubectl
@@ -57,7 +58,6 @@
         casks = [
           "clickup"
           "docker"
-          "google-chrome"
           "notion"
           "sublime-text"
         ];
