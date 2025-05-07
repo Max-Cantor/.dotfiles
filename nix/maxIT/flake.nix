@@ -33,6 +33,7 @@
           pkgs.go
           pkgs.google-cloud-sdk
           pkgs.iterm2
+          pkgs.kubectl
           pkgs.kubernetes-helm
           pkgs.metabase
           pkgs.mkalias
@@ -49,7 +50,6 @@
         enable = true;
         taps = [];
         brews = [
-          "kubernetes-cli"
           "node"
           "rust"
           "tox"
