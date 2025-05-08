@@ -29,6 +29,7 @@
           pkgs.act
           pkgs.arc-browser
           pkgs.argocd
+          pkgs.code-cursor
           pkgs.datadog-agent
           pkgs.go
           pkgs.google-chrome
