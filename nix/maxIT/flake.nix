@@ -41,10 +41,12 @@
           pkgs.mkalias
           pkgs.neovim
           pkgs.newman
+          pkgs.postman
           pkgs.python314
           pkgs.terraform
           pkgs.uv
           pkgs.vim
+          pkgs.vscode
           pkgs.warp-terminal
         ];
 
@@ -59,6 +61,7 @@
         casks = [
           "clickup"
           "docker"
+          "github"
           "notion"
           "sublime-text"
         ];
