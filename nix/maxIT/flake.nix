@@ -31,17 +31,21 @@
           pkgs.argocd
           pkgs.code-cursor
           pkgs.datadog-agent
+          pkgs.gnumake
           pkgs.go
           pkgs.google-chrome
           pkgs.google-cloud-sdk
           pkgs.iterm2
           pkgs.kubectl
           pkgs.kubernetes-helm
+          pkgs.libpq
           pkgs.metabase
           pkgs.mkalias
           pkgs.neovim
           pkgs.newman
+          pkgs.poetry
           pkgs.postman
+          pkgs.pre-commit
           pkgs.python314
           pkgs.terraform
           pkgs.uv
