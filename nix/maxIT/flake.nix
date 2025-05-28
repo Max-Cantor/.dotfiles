@@ -68,6 +68,7 @@
           "github"
           "notion"
           "sublime-text"
+          "zen"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
