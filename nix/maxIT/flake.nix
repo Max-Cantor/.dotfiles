@@ -36,6 +36,7 @@
           pkgs.google-chrome
           pkgs.google-cloud-sdk
           pkgs.iterm2
+          pkgs.jq
           pkgs.kubectl
           pkgs.kubernetes-helm
           pkgs.libpq
