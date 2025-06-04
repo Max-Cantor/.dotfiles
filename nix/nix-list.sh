@@ -19,11 +19,11 @@ usage() {
   echo "  <config-name>: The name of your darwinConfiguration output"
   echo "                 in your flake.nix (e.g., 'hostname')"
   echo "Options:"
-  echo "  --updated: Show what changed in the last rebuild"
+  echo "  --updated: Show what changed in the last rebuild (requires sudo)"
   echo ""
   echo "Example:"
   echo "  $(basename "$0") hostname"
-  echo "  $(basename "$0") hostname --updated"
+  echo "  sudo $(basename "$0") hostname --updated"
   echo ""
   echo "Flake directory used: $FLAKE_DIR"
   exit 1
