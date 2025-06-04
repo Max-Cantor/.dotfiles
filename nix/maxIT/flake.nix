@@ -44,6 +44,7 @@
           pkgs.mkalias
           pkgs.neovim
           pkgs.newman
+          pkgs.nix-diff
           pkgs.poetry
           pkgs.postman
           pkgs.pre-commit
