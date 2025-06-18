@@ -46,6 +46,7 @@
           pkgs.newman
           pkgs.nix-diff
           pkgs.poetry
+          pkgs.postgresql
           pkgs.postman
           pkgs.pre-commit
           pkgs.python314
@@ -61,6 +62,7 @@
         taps = [];
         brews = [
           "node"
+          "pipx"
           "rust"
           "tox"
         ];
