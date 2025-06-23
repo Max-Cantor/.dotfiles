@@ -30,7 +30,8 @@
           pkgs.arc-browser
           pkgs.argocd
           pkgs.code-cursor
-          pkgs.datadog-agent
+          # Commenting out due to unresolved compatibility issues with python 3.13.
+          # pkgs.datadog-agent
           pkgs.gnumake
           pkgs.go
           pkgs.google-chrome
@@ -68,7 +69,7 @@
         ];
         casks = [
           "clickup"
-          "docker"
+          "docker-desktop"
           "github"
           "notion"
           "sublime-text"
