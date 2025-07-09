@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs-23-11.url = "github:NixOS/nixpkgs/release-23.11";
     nix-darwin.url = "github:nix-darwin/nix-darwin/master";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
@@ -16,7 +17,7 @@
     };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, ... }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nixpkgs-23-11, nix-homebrew, homebrew-core, homebrew-cask, ... }:
   let
     configuration = { pkgs, config, ... }: {
 
@@ -104,6 +105,9 @@
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
 
+      # Increase download buffer size to avoid warnings
+      nix.settings.download-buffer-size = "1048576";
+
       # Enable alternative shell support in nix-darwin.
       # programs.fish.enable = true;
 
@@ -144,6 +148,25 @@
           };
         }
       ];
+    };
+
+    # Development shell with Python 3.9 (using nixpkgs 23.11)
+    # Use with: nix develop .#python39
+    devShells.aarch64-darwin.python39 = let
+      pkgs = nixpkgs-23-11.legacyPackages.aarch64-darwin;
+    in pkgs.mkShell {
+      buildInputs = with pkgs; [
+        python39
+        python39Packages.pip
+        python39Packages.setuptools
+        python39Packages.wheel
+      ];
+
+      shellHook = ''
+        echo "Python 3.9 development environment loaded"
+        echo "Python version: $(python3.9 --version)"
+        echo "Pip version: $(python3.9 -m pip --version)"
+      '';
     };
   };
 }
