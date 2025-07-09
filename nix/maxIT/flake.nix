@@ -64,6 +64,7 @@
         brews = [
           "node"
           "pipx"
+          "python@3.9"
           "rust"
           "tox"
         ];
