@@ -51,6 +51,8 @@
           pkgs.postman
           pkgs.pre-commit
           pkgs.python314
+          pkgs.python312
+          pkgs.redis
           pkgs.terraform
           pkgs.uv
           pkgs.vim
@@ -67,6 +69,7 @@
           "python@3.9"
           "rust"
           "tox"
+          "vercel-cli"
         ];
         casks = [
           "clickup"
