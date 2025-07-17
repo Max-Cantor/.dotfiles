@@ -73,6 +73,7 @@
         ];
         casks = [
           "clickup"
+          "datadog-agent"
           "docker-desktop"
           "github"
           "notion"
