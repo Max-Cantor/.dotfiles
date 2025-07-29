@@ -76,6 +76,7 @@
           "datadog-agent"
           "docker-desktop"
           "github"
+          "google-drive"
           "notion"
           "sublime-text"
           "zen"
