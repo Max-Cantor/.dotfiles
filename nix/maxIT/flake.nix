@@ -29,10 +29,13 @@
           pkgs.act
           pkgs.arc-browser
           pkgs.argocd
+          pkgs.bun
           pkgs.code-cursor
           # Commenting out due to unresolved compatibility issues with python 3.13.
           # pkgs.datadog-agent
+          pkgs.doppler
           pkgs.gnumake
+          pkgs.gnupg
           pkgs.go
           pkgs.google-chrome
           pkgs.google-cloud-sdk
