@@ -27,7 +27,8 @@
       environment.systemPackages =
         [
           pkgs.act
-          pkgs.arc-browser
+          # Commenting out as it has been marked insecure.
+          # pkgs.arc-browser
           pkgs.argocd
           pkgs.bun
           pkgs.code-cursor
