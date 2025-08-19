@@ -45,6 +45,7 @@
           pkgs.kubectl
           pkgs.kubernetes-helm
           pkgs.libpq
+          pkgs.mermaid-cli
           pkgs.metabase
           pkgs.mkalias
           pkgs.neovim
