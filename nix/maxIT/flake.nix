@@ -35,6 +35,7 @@
           # Commenting out due to unresolved compatibility issues with python 3.13.
           # pkgs.datadog-agent
           pkgs.doppler
+          pkgs.gh
           pkgs.gnumake
           pkgs.gnupg
           pkgs.go
