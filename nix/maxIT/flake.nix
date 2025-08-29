@@ -40,7 +40,9 @@
           pkgs.gnupg
           pkgs.go
           pkgs.google-chrome
-          pkgs.google-cloud-sdk
+          (pkgs.google-cloud-sdk.withExtraComponents (with pkgs.google-cloud-sdk.components; [
+  gke-gcloud-auth-plugin
+]))
           pkgs.iterm2
           pkgs.jq
           pkgs.kind
