@@ -61,6 +61,7 @@
           pkgs.pre-commit
           pkgs.python314
           pkgs.python312
+          pkgs.raycast
           pkgs.redis
           pkgs.terraform
           pkgs.uv
