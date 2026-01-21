@@ -82,6 +82,7 @@
           "vercel-cli"
         ];
         casks = [
+          "claude-code"
           "clickup"
           "datadog-agent"
           "docker-desktop"
