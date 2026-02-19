@@ -27,13 +27,10 @@
       environment.systemPackages =
         [
           pkgs.act
-          # Commenting out as it has been marked insecure.
-          # pkgs.arc-browser
-          pkgs.argocd
+          # broken in nixpkgs-unstable: fetchYarnDeps hash mismatch for argocd-ui; install via homebrew instead
+          # pkgs.argocd
           pkgs.bun
           pkgs.code-cursor
-          # Commenting out due to unresolved compatibility issues with python 3.13.
-          # pkgs.datadog-agent
           pkgs.doppler
           pkgs.gh
           pkgs.gnumake
@@ -74,6 +71,7 @@
         enable = true;
         taps = [];
         brews = [
+          "argocd"
           "node"
           "pipx"
           "python@3.9"
@@ -84,7 +82,6 @@
         casks = [
           "claude-code"
           "clickup"
-          "datadog-agent"
           "docker-desktop"
           "github"
           "google-drive"
