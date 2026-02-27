@@ -42,6 +42,7 @@
 ]))
           pkgs.iterm2
           pkgs.jq
+          pkgs.k6
           pkgs.kind
           pkgs.kubectl
           pkgs.kubernetes-helm
