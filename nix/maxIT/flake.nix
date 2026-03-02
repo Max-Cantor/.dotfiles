@@ -86,6 +86,7 @@
           "docker-desktop"
           "github"
           "google-drive"
+          "logi-options+"
           "notion"
           "sublime-text"
           "zen"
